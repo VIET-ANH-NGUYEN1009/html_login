@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+#main{}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#header .logo a{
+    display: inline-block;
+    color: white;
+    padding: 12px 16px;
+    height: 48px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#header .head a{
+    display: inline-block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    height: 48px;
+
+}
+#header .LOGIN{
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    height: 48px;
+    border: none;
+}
+#header .head a:hover,
+#header .logo a:hover{
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+#header .LOGIN:hover{
+    cursor: pointer;
+    font-size: 22px;
+    text-decoration: underline;
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+
+#slide {
+    width: 100%;
+    overflow: hidden;
+}
+#slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#content {}
+/* #login_bg{
+    display: none;
+} */
+/* #login_bg .active{
+    display: none;
+} */
+
+#login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* nền mờ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#register-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* nền mờ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#content .login_form {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 420px;
+    color: white;
+    border-radius: 10px ;
+    padding: 30px 40px;
+}
+#register_bg{
+    /* display: none; */
+}
+
+/* #register_bg .active{
+    display: none;
+} */
+
+#content .register_form {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 420px;
+    color: white;
+    border-radius: 10px ;
+    padding: 30px 40px;
+}
+#content .login_form h1{
+    font-size: 46px;
+    text-align: center;
+}
+#content .register_form h1{
+    font-size: 46px;
+    text-align: center;
+}
+#content .input_box{
+    position: relative;
+    width: 100%;
+    /* background-color: burlywood; */
+    margin: 30px 0;
+    height: 50px;
+}
+#content input{
+    width: 100%  ;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    padding: 10px 20px;
+    color: white;
+}
+/* #content input::placeholder{
+    background-color: aliceblue;
+    width: 100%;
+} */
+
+.input_box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.remember_forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: -15px 0 15px;
+
+}
+
+.remember_label {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Khoảng cách giữa checkbox và chữ */
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap; /* Chống xuống dòng chữ */
+}
+
+
+
+.remember_label input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.remember_forgot label input{
+    color: white;
+    margin-right: 3px;
+    cursor: pointer;
+
+}
+
+.remember_forgot a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.remember_forgot a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+#content .btn{
+    width: 100%;
+    height: 46px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+#content .btn:hover{
+    color: aliceblue;
+    background-color: darkblue;
+    cursor: pointer;
+}
+#content .register_link{
+    text-align: center;
+    margin: 20px;
+    font-size: 13px;
+
+}
+#content .register_link a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+#content .register_link a:hover{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+
+#content{} 
+
+#footer{}
